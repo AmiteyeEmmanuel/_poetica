@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="font-family:arial, 'helvetica neue', helvetica, sans-serif">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Poetica Order Confirmation Email</title> 
+  <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #fff;
+        color: #1a1a1a;
+    }
+    .container {
+        padding: 20px;
+    }
+    .header {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .order-details {
+        margin: 20px 0;
+    }
+    .footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #888;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Poetica Order Confirmation</h1>
+        </div>
+        <div class="order-details">
+            <p>Thank you for your order with Poetica. Here are your order details:</p>
+            <p><strong>Order ID:</strong> <%= order._id %></p>
+            <p><strong>Order Name:</strong> <%= order.name %></p>
+            <p><strong>Order Price:</strong> $<%= order.price %></p>
+            <p><strong>Order Date:</strong> <%= order.date %></p>
+            <p>You can view your order details by clicking the button below:</p>
+            <a href="#" class="button">Go to Order</a>
+            <p>If you did not make this order, please contact us immediately.</p>
+        </div>
+        <div class="footer">
+            <p>If you have any questions, please don't hesitate to contact us at <a href="mailto:support@poetica.com">support@poetica.com</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

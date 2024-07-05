@@ -1,0 +1,35 @@
+# Ignore node_modules in all folders
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore additional unwanted files or folders globally
+*.log
+*.lock
+.vscode/
+.idea/
+tmp/
+temp/
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore OS generated files
+Thumbs.db
+.DS_Store
+
+# Ignore all logs and temp files in all folders
+**/*.log
+**/tmp/
+**/temp/
+
+# Ignore specific folders 
+client/node_modules/
+server/node_modules/
+client/build/
+server/build/
